@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous', cursive;
+}
+body{
+    width: 100%;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 100vh;
+    }
+    
+    .sidebar { 
+        grid-area: 1 / 1 / 6 / 2; 
+        background: #20fc8f;
+        color: #2D2D2A;
+    }
+        .sidebar h2{
+            margin: 10px;
+        }
+        .sblist{
+            margin: 15px;
+        }
+        .sblist li{
+            list-style: none;
+            padding: 5px;
+        }
+        .sblist2{
+            margin: 15px;
+        }
+        .sblist2 li{
+            list-style: none;
+            padding: 5px;
+        }
+    .topbar { 
+        grid-area: 1 / 2 / 2 / 6; 
+        background:#353831;
+        color: white;
+    }
+        .topbar .tbsearch{
+            display: flex;
+            margin: 10px;
+            position: relative;
+        }
+        #bellicon{
+            margin: 10px 30px 0 0;
+        }
+        .tbcombine{
+            width: 60%;
+        }
+        .tbcombine i{
+            padding: 10px;
+        }
+        input[type="text"]{
+            width: 80%;
+            height: 20px;
+            border-radius: 10px;
+        }
+        .tbprofile{
+            display: flex;
+            position: absolute;
+            right: 10px;
+        }
+        .tbprofile img{
+            border-radius: 50%;
+            padding: 2px 5px;
+        }
+        .tbprofile h3{
+            margin: 5px;
+        }
+        .tbbigprofile{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .tbbigprofile .profile{
+            display: flex;
+            margin: 20px 0 15px 20px;
+        }
+        .profile img{
+            padding: 10px 5px 0 0;
+            border-radius: 50%;
+        }
+        .profile .tbgname{
+            padding: 10px 0 0 5px;
+        }
+        .tbgbuttons{
+            margin: 40px 20px 15px 0;
+            position: absolute;
+            right: 50px;
+        }
+        .tbgbuttons button{
+            background-color: #20fc8f;
+            color: black;
+            padding: 5px 20px;
+            border-radius: 10px;
+            font-size:  15px ; 
+            font-weight: 400;
+            margin: 10px;
+        }
+    .hero { 
+        grid-area: 2 / 2 / 6 / 5; 
+        background: #38423B;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+        .hero h2{
+            padding:5px 10px 0 10px;
+        }
+        .hero .hrow1{
+            display: flex;
+        }
+        .box{
+            display: flex;
+            background-color: #3F5E5A;
+            margin: 10px;
+            min-height: 115px;
+            max-height: 200px;
+            overflow: hidden;
+            padding: 0px 5px 10px 30px;
+            position: relative;
+            border-radius: 10px;
+        }
+        .bar{
+            position: absolute;
+            width: 10px;
+            left: 0;
+            background-color: #20fc8f;
+            height: 300px;
+        }
+        .content p{
+            font-family: 'Gemunu Libre', sans-serif;;
+            font-size: 18px;
+            max-height: 100px;
+            overflow: hidden;
+
+        }
+        .icons{
+            position: absolute;
+            right: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .icons a{
+            text-decoration: none;
+            color: #20fc8f;
+            margin: 5px;
+        }
+    .rightbar{ 
+        grid-area: 2/5/6/6; 
+        background-color: #3F5E5A;
+    }
+        .rbbox1{
+            background-color: #38423B;
+            max-width: 250px;
+            margin: 10px 10px ;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .rbbox1 li{
+            list-style-type: none;
+            color: white;
+        }
+        .rbprofile{
+            display: flex;
+            margin: 5px;
+        }
+        .rbprofile img{
+            margin-right: 5px;
+            border-radius: 50%;
+        }
+        .rbprofile h3{
+            padding-top: 2px;
+            color: white;
+        }
+        .rbbox1 span{
+            font-family: 'Gemunu Libre', sans-serif;;
+        }
+        .rightbar h2{
+            padding: 5px 0 0 10px;
+            color: #20fc8f;
+        }
+    
