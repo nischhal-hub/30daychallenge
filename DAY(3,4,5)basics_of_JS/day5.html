@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals</title>
+    <style>
+        .time{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conditionals(time checker and simple clock)</h1>
+    <p id="demo"></p>
+
+    <p>The time is :</p>
+    <div class="time">
+    <p id="hh"></p>
+    <p>:</p>
+    <p id="mm"></p>
+    <p>:</p>
+    <p id="ss"></p>
+</div>    
+    <script>
+        let time = new Date().getMinutes();
+        let hour = new Date().getHours();
+        let second = new Date().getSeconds();
+        let greeting;
+
+        if(hour<10){
+            greeting = 'Good morning';
+        }
+        else if(hour>10 && hour<20){
+            greeting = 'Good day';
+        }
+        else{
+            greeting = 'good night';
+        }
+        document.getElementById('demo').innerHTML = greeting;
+        document.getElementById('hh').innerHTML = hour;
+        document.getElementById('mm').innerHTML = time;
+        document.getElementById('ss').innerHTML = second ;
+
+
+    </script>
+    
+</body>
+</html>
