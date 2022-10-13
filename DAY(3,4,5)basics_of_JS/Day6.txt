@@ -1,0 +1,10 @@
+In day 6 i learned about firefox developer tools and revisited JS variables,datatypes and objects and regex.
+Regex stands for Regular expression they are especially useful when validating forms.
+I will further update notes on regex in near future.
+
+sources:
+https://www.theodinproject.com/lessons/foundations-javascript-developer-tools
+https://firefox-source-docs.mozilla.org/devtools-user/
+
+for regex
+https://youtube.com/playlist?list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD
