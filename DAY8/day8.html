@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FUN-ctions</h1>
+
+    <script>
+        /*let age = prompt("What is your age?", " ");
+        function checkAge(age){
+            return (age > 18) || confirm("Do your parents have given permission?");
+        }
+        let a = prompt("First number::", "");
+        let b = prompt("Second number::", "");
+
+        function getLargest(a,b){
+            return a > b ? a : b ;
+            
+        }
+        alert (getLargest(a, b));*/
+        
+        
+        // using function expression
+        /*function ask(question, yes, no){  //function passed as parameters.
+            if(confirm(question))
+            yes()
+            else
+            no();
+        }
+        function showOk(){           //argument of parameter yes.
+            alert('You agreed');
+        }
+        function showCancel(){      //argument of parameter no.
+            alert('YOu disagreed');
+        }
+        ask("do you agree?", showOk, showCancel);*/
+
+
+        //using arrow functions
+        /*function ask(question, yes,no) { confirm(question) ? yes() : no();} 
+
+        ask("do you agree?",
+        ()=> {alert("you agreed");},
+        ()=> {alert("YOu disagreed");});*/
+
+        //task1 (the odin project fundamentals of js part 3)
+
+        //function to add 7 in any number you input.
+
+        // let a = prompt ("What's the number?" , "");
+        function add7(a){
+            total = a + 7;
+            return total;
+        }
+        //alert (add7(4));
+
+        //TASK2 :TO MULTIPLY TWO NUMBERS
+        function multiply(a,b){
+            
+            return  a*b ;
+        }
+        //alert(multiply(2,3));
+
+        //TASK3 : TO CAPITALIZE
+
+        // const str = prompt("Enter your word to capitalize.", "ThE");
+        function getCapital(str){
+            capital = str.toUpperCase();
+            return capital;
+        }
+        //alert(getCapital("RaM"));
+
+        //Task 4: to take a string and return the very lfuast letter of that string:
+        function getLastletter(word){
+            last = word.slice(-1);
+            return last ;
+        }
+        alert(getLastletter("anime"));
+    </script>
+</body>
+</html>

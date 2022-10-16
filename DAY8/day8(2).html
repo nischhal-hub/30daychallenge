@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIZZBUZZ challenge</title>
+</head>
+<body>
+    <h1>FIzzBUzz- challenge</h1>
+    <p>In this challenge you have to Write a program that takes a user’s input and prints the numbers from one to the number the user entered. However, for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz.</p>
+    <p>You will be prompted to enter a number and the result will be shown in console.</p>
+    <script>
+        let number = parseInt(prompt("ENter the number you want to fizzbuzz upto:", ""));
+        for(i =1; i<=number; i++){
+            if(i%3===0 && i%5===0){
+                console.log('fizzbuzz');
+            }
+            else if(i%3===0){
+                console.log('Fizz');
+            }
+            else if(i%5===0){
+                console.log('BUzz');
+            }
+            else console.log(i);
+        }
+    </script>
+</body>
+</html>
